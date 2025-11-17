@@ -15,5 +15,5 @@ func main() {
 		})
 	})
 
-	router.Run(":3000")
+	router.Run(":" + config.GetEnv("APP_PORT", "3000"))
 }

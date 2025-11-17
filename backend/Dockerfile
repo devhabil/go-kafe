@@ -13,6 +13,6 @@ FROM alpine:latest
 WORKDIR /app
 COPY --from=builder /app/main .
 
-EXPOSE 3000
+EXPOSE 3306
 
 CMD ["./main"]
